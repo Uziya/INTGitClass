@@ -1,0 +1,812 @@
+#aboutISO{
+	padding: 44px 0px 98px;
+	h2{
+		font-size: 33px;
+		color: $violet;
+		font-weight: bold;
+		& ~ p{
+			font-size: 22px;
+			color: $ligth-black;
+			font-weight: normal;
+		}
+	}
+	/* .et-about-why-block */
+	.et-about-why-block{
+		height: 100%;
+		background: #F6F8FB 0% 0% no-repeat padding-box;
+		box-shadow: 0px 1px 10px #0000000D;
+		border-radius: 10px;
+		padding: 56px 23px 16px 58px;
+		margin-right: 36px;
+		& > h3{
+			font-size: 22px;
+			letter-spacing: 0px;
+			color: $ligth-black;
+			margin-bottom: 51px;
+			font-weight: bold;
+		}
+		& > table.table{
+			align-items: flex-start;
+			td{
+				border: 0 !important;
+				&:first-of-type > span{
+					display: block;
+					text-align: center;
+					line-height: 54px;
+					border-radius: 50%;
+					font-size: 30px;
+					font-weight: bold;
+					color: #FFFFFF;
+					width: 54px;
+					height: 54px;
+					background: transparent linear-gradient(328deg, #5D192F 0%, #578BC5 100%) 0% 0% no-repeat padding-box;
+				}
+				h5{
+					font-size: 20px;
+					color: $ligth-black;
+					font-weight: bold;
+					margin-bottom: 5px;
+					& ~ p{
+						font-size: 20px;
+						line-height: 26px;
+						color: $ligth-black;
+						max-width: 327px;
+						margin-bottom: 66px;
+						font-weight: normal;
+					}
+				}
+			}
+
+		}
+	} 
+	/*.et-about-serveYou-block*/
+	.et-about-serveYou-block{
+		background: #F6F8FB 0% 0% no-repeat padding-box;
+		box-shadow: 0px 1px 10px #0000000D;
+		padding: 56px 82px 118px;
+		margin-bottom: 60px;
+		h3{
+			font-size: 25px;
+			color: $ligth-black;
+			margin-bottom: 48px;
+			font-weight: bold;
+			& ~ .row{
+				a{
+					font-size: 22px;
+					display: block;
+					color: $ligth-black;
+					margin-bottom: 9px;
+					font-weight: bold;
+					transition: .5s;
+					border-radius: 10px;
+					padding-left: 10px;
+					& ~ p{
+						font-size: 20px;
+						line-height: 26px;
+						color: $ligth-black;
+						padding-left: 10px;
+						margin-bottom: 64px;
+						max-width: 391px;
+						font-weight: normal;
+					}
+					&:hover{
+						color: #FFFFFF;
+		                background: transparent linear-gradient(283deg, $violet 0%, $blue 100%) 0% 0% no-repeat padding-box;
+
+					}
+				}
+			}
+		}
+	}
+	/* et-about-referralProgram-block */
+	.et-about-referralProgram-block{
+		background: transparent linear-gradient(283deg, $violet 0%, $blue 100%) 0% 0% no-repeat padding-box;
+		box-shadow: 0px 1px 10px #0000000D;
+		border-radius: 10px;
+		padding: 53px 85px;
+		& > a {
+			font-size: 25px;
+			font-weight: bold;
+			color: #FFFFFF;
+			margin-bottom: 14px;
+			display: block;
+			&:hover{
+				text-decoration: underline !important;
+			}
+			& ~ p{
+				font-size: 14px;
+				line-height: 30px;
+				color: #FFFFFF;
+				font-weight: normal;
+			}
+		}
+	}
+} /* section about Iso*/
+
+#insureStudents{
+	padding: 118px 20px 106px;
+	background: #F6F8FB;
+	overflow: hidden;
+
+	h2{
+		font-size:33px;
+		line-height: 60px;
+		color: $blue;
+		font-weight: normal;
+		margin-bottom: 19px;
+		& > span{
+			font-weight: bold;
+		}
+		& ~ p{
+			font-size: 14px;
+			color: $ligth-black;
+			line-height: 26px;
+			max-width: 444px;
+			font-weight: normal;
+		}
+	}
+
+	/* et-insureStudents-slider block*/
+	#et-insureStudents-slider{
+		// height: 350px;
+		max-width: 100%;
+		.et-slider-item{
+			height: calc((100% - 60px) / 2);
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			&  > p{
+				font-size: 22px;
+				line-height: 28px;
+				color: $ligth-black;
+				text-align: center;
+				font-weight: bold;
+				margin-top: 21px;
+			}
+			& > .et-slider-img{
+				width: 120px;
+				height: 60px;
+			}
+		}
+		& ~ .swiper-pagination{
+			position: static;
+			margin-top: 65px;
+			.swiper-pagination-bullet {
+		      	width: 12px;
+		      	height: 12px;
+		      	background: $gray;
+		      	margin: 0 10px;
+		    }
+		    .swiper-pagination-bullet-active {
+		     	background: $blue;
+		    }
+		}
+	}
+}/* section insureStudents */
+
+#peopleSayISO{
+	background: transparent linear-gradient(180deg, $violet,$violet, rgba($violet, .8), #E3F1FC) 0% 0% no-repeat padding-box;
+	padding: 80px 20px 80px;
+	h2 {
+		font-size: 33px;
+		line-height: 60px;
+		color: #FFFFFF;
+		margin-bottom: 63px;
+		font-weight: bold;
+	}
+
+	#et-peopleSay-slider{
+		.swiper-container{
+			// height: 330px;
+		}
+		.et-card{
+			background: #FFFFFF 0% 0% no-repeat padding-box;
+			box-shadow: 0px 3px 6px #00000029;
+			border-radius: 100px;
+			padding: 53px 100px 35px;
+			font-weight: bold;
+			// margin-bottom: 107px;
+			position: relative;
+			overflow: hidden;
+			height: 100%;
+			max-width: 633px;
+			.et-card-message{
+				font-weight: bold;
+				font-style: italic;
+				line-height: 34px;
+				font-size: 17px;
+				color: $violet;
+				margin-bottom: 34px;
+				position: relative;
+				z-index: 10;
+			}
+			.et-card-studen{
+				font-size: 15px;
+				font-weight: bold;
+				line-height: 24px;
+				margin-bottom: 5px;
+				color: $violet;
+				position: relative;
+				z-index: 10;
+				& ~ p{
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 26px;
+					color: $ligth-black;
+					position: relative;
+					z-index: 10;
+				}
+			}
+			&::before,
+			&::after{
+				content: '';
+				position: absolute;
+				background: url('../images/index/peopleSayISO/bg-icon.png') no-repeat center;
+				background-size: 100%;
+				z-index: 1;
+			}
+			&::before{
+				width: 172px;
+				height: 128px;
+				top: 2px;
+				left: 35px;
+			}
+			&::after{
+				width: 101px;
+				height: 83px;
+				right: 35px;
+				bottom: 53px;
+				transform: rotate(180deg);
+			}
+			&.swiper-slide{
+				opacity: 0;
+            }
+			&.swiper-slide.swiper-slide-active{
+				opacity: 1;
+			}
+            &.swiper-slide.swiper-slide-prev,
+            &.swiper-slide.swiper-slide-next{
+				opacity: .5;
+            }
+		}
+		& > .swiper-pagination{
+			position: static;
+			margin-top: 65px;
+			.swiper-pagination-bullet {
+		      	background: #ffffff;
+				opacity: .5;
+				width: 12px;
+				height: 12px;
+				margin: 0 10px;
+		    }
+		    .swiper-pagination-bullet-active {
+		     	background: #ffffff;
+				opacity: 1;
+		    }
+		}
+	}
+} /* section peopleSayISO */
+
+#questionsHelp{
+	padding: 65px 20px 65px;
+	h2{
+		font-weight: normal;
+		font-size: 33px;
+		line-height: 60px;
+		color: $ligth-black;
+		margin-bottom: 33px;
+		& > span{
+			font-weight: bold;
+			color: $violet;
+		}
+
+		& ~ button.et-btn-addFAQ{
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 30px;
+			color: #FFFFFF;
+			background: $violet 0% 0% no-repeat padding-box;
+			border-radius: 10px;
+			padding: 18px 49px 25px;
+		} 
+	}
+	/* accordion */
+	#et-accordionHelp{
+		.card{
+			border: 0;
+			border-bottom: 3px solid #F1E7EB;
+			padding: 29px 0 18px;
+			&:first-of-type{
+				padding-top: 0;
+			}
+		}
+		.card-header{
+			padding: 0 0 11px;
+			border: 0;
+			background: transparent;
+			& > button{
+				font-weight: bold;
+				line-height: 30px;
+				font-size: 18px;
+				letter-spacing: 0px;
+				color: $ligth-black;
+				transition: .2s;
+				padding: 0;
+				text-align: left;
+				& > svg{
+					transition: .2s;
+					& > path{
+						fill:$ligth-black;
+					}
+				}
+				&:hover{
+					text-decoration: none;
+					color: $violet;
+					& > svg{
+						& > path{
+							fill:$violet;
+						}
+					}
+				}
+				&.active{
+					text-decoration: none;
+					color: $violet;
+					& > svg{
+						transform: rotate(180deg);
+						& > path{
+							fill:$violet;
+						}
+					}
+				}
+				&:focus{
+					text-decoration: none;
+				}
+			}
+		}
+		p.card-body{
+			font-size: 20px;
+			line-height: 28px;
+			color: $ligth-black;
+			padding: 0;
+			max-width: 812px;
+		}
+	}
+} /* section questionsHelp */
+
+#administratorBrokers{
+	background: transparent linear-gradient(273deg, #19265D 0%, $blue 100%) 0% 0% no-repeat padding-box;
+	padding: 29px 20px 35px;
+
+	h3{
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 45px;
+		color: #FFFFFF;
+		margin-bottom: 6px;
+		& ~ p{
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 26px;
+			color: #FFFFFF;
+			margin-bottom: 0;
+		}
+	}
+
+	.et-btn-adminBroks{
+		background: #FFFFFF 0% 0% no-repeat padding-box;
+		border-radius: 10px;
+		padding: 18px 46px 22px;
+		font-weight: normal;
+		font-size: 18px;;
+		line-height: 20px;
+		color: #19265D;
+		max-height: 60px;
+		margin-top: 10px;
+	}
+} /* section administratorBrokers*/
+
+/* media */
+@media all and (min-width: 1140px) and(max-width: 1681px){
+	#aboutISO{
+		padding: 35px 0px 80px;
+		& .container>.row{
+			.col-12.text-center{
+				margin-bottom: 38px !important;
+			}
+		}
+		h2{
+			font-size: 36px;
+			& ~ p{
+				font-size: 24px;
+			}
+		}
+		/* .et-about-why-block */
+		.et-about-why-block{
+			padding: 45px 15px 10px 15px;
+			margin-right: 26px;
+			& > h3{
+				margin-bottom: 38px;
+			}
+				font-size: 28px;
+			& > table.table{
+				td{
+					padding: 0.75rem 0.61rem 0.75rem 0.65rem;
+					&:first-of-type > span{
+						line-height: 43px;
+						font-size: 24px;
+						width: 43px;
+						height: 43px;
+					}
+					h5{
+						font-size: 15px;
+						margin-bottom: 3px;
+						& ~ p{
+							font-size: 14px;
+							line-height: 1.2;
+							max-width: 327px;
+							margin-bottom: 10px;
+						}
+					}
+				}
+
+			}
+		} 
+		/*.et-about-serveYou-block*/
+		.et-about-serveYou-block{
+			padding: 45px 63px 0px;
+			margin-bottom: 40px;
+			h3{
+				font-size: 25px;
+				margin-bottom: 38px;
+				& ~ .row{
+					a{
+						font-size: 24px;
+						margin-bottom: 7px;
+						border-radius: 10px;
+						padding-left: 6px;
+						& ~ p{
+							font-size: 16px;
+							line-height: 20px;
+							padding-left: 6px;
+							margin-bottom: 52px;
+							max-width: 316px;
+						}
+					}
+				}
+			}
+		}
+		/* et-about-referralProgram-block */
+		.et-about-referralProgram-block{
+			padding: 42px 65px;
+			& > a {
+				font-size: 28px;
+				margin-bottom: 9px;
+				& ~ p{
+					font-size: 16px;
+					line-height: 25px;
+				}
+			}
+		}
+	} /* section about Iso*/
+	#insureStudents{
+		padding: 92px 20px 84px;
+
+		h2{
+			font-size: 35px;
+			line-height: 48px;
+			margin-bottom: 15px;
+			& ~ p{
+				    font-size: 16px;
+				    line-height: 21px;
+				    max-width: 363px;
+			}
+		}
+
+		/* et-insureStudents-slider block*/
+		#et-insureStudents-slider{
+			max-width: 100%;
+			.et-slider-item{
+				height: calc((100% - 60px) / 2);
+				&  > p{
+					font-size: 17px;
+					line-height: 20px;
+					margin-top: 19px;
+				}
+				& > .et-slider-img{
+					width: 100px;
+					height: 50px;
+				}
+			}
+			& ~ .swiper-pagination{
+				margin-top: 36px;
+				.swiper-pagination-bullet {
+			      	width: 9px;
+			      	height: 9px;
+			      	margin: 0 9px;
+			    }
+			}
+		}
+	}/* section insureStudents */
+	#peopleSayISO{
+		padding: 71px 20px 74px;
+		h2 {
+			font-size: 36px;
+		    line-height: 45px;
+		    margin-bottom: 51px;
+		}
+
+		#et-peopleSay-slider{
+			.et-card{
+				padding: 44px 80px 31px 80px;
+				max-width: 633px;
+				.et-card-message{
+					line-height: 26px;
+					font-size: 18px;
+					margin-bottom: 30px;
+				}
+				.et-card-studen{
+					font-size: 16px;
+					line-height: 18px;
+					margin-bottom: 5px;
+					& ~ p{
+						font-size: 16px;
+						line-height: 20px;
+					}
+				}
+				&::before{
+					width: 172px;
+					height: 128px;
+					top: 2px;
+					left: 35px;
+				}
+				&::after{
+					width: 101px;
+					height: 83px;
+					right: 35px;
+					bottom: 53px;
+				}
+			}
+			& > .swiper-pagination{
+				margin-top: 45px;
+				.swiper-pagination-bullet {
+					width: 9px;
+					height: 9px;
+					margin: 0 8px;
+			    }
+			}
+		}
+	} /* section peopleSayISO */
+	#questionsHelp{
+		padding: 65px 20px 65px;
+		h2{
+			font-size: 36px;
+		    line-height: 52px;
+		    margin-bottom: 22px;
+			& ~ button.et-btn-addFAQ{
+				font-size: 20px;
+			    line-height: 20px;
+			    padding: 17px 39px 22px;
+			} 
+		}
+		/* accordion */
+		#et-accordionHelp{
+			.card{
+				padding: 20px 0 15px;
+			}
+			.card-header{
+				padding: 0 0 5px;
+				& > button{
+					line-height: 25px;
+					font-size: 18px;
+				}
+			}
+			p.card-body{
+				font-size: 18px;
+				line-height: 21px;
+				max-width: 655px;
+			}
+		}
+	} /* section questionsHelp */
+	#administratorBrokers{
+		padding: 20px 20px 25px;
+
+		h3{
+			font-size: 24px;
+		    line-height: 41px;
+		    margin-bottom: 0px;
+			& ~ p{
+				font-size: 16px;
+    			line-height: 26px;
+			}
+		}
+
+		.et-btn-adminBroks{
+			padding: 0px 36px 0px;
+		    font-size: 20px;
+		    line-height: 20px;
+			margin-top: 5px;
+		}
+	} /* section administratorBrokers*/
+}
+// @media (max-width: 1690px) {
+// 	#aboutISO{
+// 		/* .et-about-why-block */
+// 		.et-about-why-block{
+// 			padding: 56px 23px 16px 23px;
+// 		}
+// 	}
+// }
+@media (max-width: 1200px) {
+	#aboutISO{
+		/* .et-about-why-block */
+		.et-about-why-block{
+			margin-bottom: 30px;
+			margin-right: 0;
+			& > table.table{
+				td{
+					h5{
+						& ~ p{
+							max-width: 500px;
+							margin-bottom: 33px;
+						}
+					}
+				}
+
+			}
+		}
+	}
+	#insureStudents{
+		h2{
+			& ~ p{
+				margin-bottom: 22px;
+				max-width: 100%;
+				margin-bottom: 22px;
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	#aboutISO{
+		padding: 21px 20px 28px;
+		h2{
+			font-size: 22px;
+			margin-bottom: 5px;
+			& ~ p{
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+		/* .et-about-why-block */
+		.et-about-why-block{
+			padding: 21px 21px 26px;
+			margin-bottom: 22px;
+			margin-right: 0;
+			& > h3{
+				font-size: 18px;
+				margin-bottom: 27px;
+			}
+			& > table.table{
+				td{
+					vertical-align: middle;
+					&:first-of-type > span{
+						line-height: 38px;
+						font-size: 20px;
+						width: 38px;
+						height: 38px;
+					}
+					h5{
+						font-size: 16px;
+						margin-bottom: 0px;
+						font-weight: normal;
+					}
+				}
+
+			}
+		} 
+		/* et-about-referralProgram-block */
+		.et-about-referralProgram-block{
+			padding: 20px;
+			& > a {
+				font-size: 18px;
+				margin-bottom: 0;
+				text-decoration: underline !important;
+				text-align: center;
+			}
+		}
+	}
+	/* section administratorBrokers*/ 
+	#administratorBrokers{
+		padding: 37px 20px;
+		h3{
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 7px;
+			& ~ p{
+				font-size: 16px;
+				line-height: 22px;
+				margin-bottom: 34px;
+			}
+		}
+		.et-btn-adminBroks{
+			padding: 12px 24px;
+			font-size: 20px;;
+			line-height: 24px;
+		}
+	}
+	/* section insureStudents */
+	#insureStudents{
+		padding: 27px 20px 21px;
+		h2{
+			font-size:22px;
+			line-height: 27px;
+			margin-bottom: 8px;
+			& ~ p{
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+
+		/* et-insureStudents-slider block*/
+		#et-insureStudents-slider{
+			height: 300px;
+			margin-top: 22px;
+			.et-slider-item{
+				height: calc((100% - 50px) / 2);
+
+				&  > p{
+					font-size: 15px;
+					line-height: 18px;
+					margin-top: 4px;
+				}
+				& > .et-slider-img{
+					width: 100px;
+					height: 50px;
+				}
+			}
+			& ~ .swiper-pagination{
+				margin-top: 0px;
+				.swiper-pagination-bullet {
+			      	margin: 0 7.5px;
+			    }
+			}
+		}
+	}
+	/* section peopleSayISO */
+	#peopleSayISO{
+		padding: 43px 20px;
+		h2 {
+			font-size: 22px;
+			line-height: 27px;
+			margin-bottom: 63px;
+		}
+
+		#et-peopleSay-slider{
+			.swiper-container{
+				height: 320px;
+			}
+			.et-card{
+				padding: 58px 19px;
+				margin-bottom: 24px;
+				max-width: 100%;
+				&::before{
+					display: none;
+				}
+				.et-card-message{
+					line-height: 22px;
+					font-size: 16px;
+					margin-bottom: 26px;
+				}
+				.et-card-studen,
+				.et-card-studen ~ p{
+					font-size: 14px;					
+					line-height: 20px;
+				}
+				&.swiper-slide.swiper-slide-prev,
+	            &.swiper-slide.swiper-slide-next{
+					opacity: 0;
+	            }
+			}
+		}
+	}
+}

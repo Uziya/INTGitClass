@@ -1,0 +1,460 @@
+/* user-insurance-block section*/
+#user-insurance-block{
+	padding: 47px 0 58px;
+	background: #F6F8FB 0% 0% no-repeat padding-box;
+	
+	.user-insurance-header{
+		margin-bottom: 44px;
+		h2{
+			font-weight: bold;
+			font-size: 40px;
+			line-height: 50px;
+			color: $violet;
+		}
+		h3{
+			font-size: 25px;
+			line-height: 35px;
+			font-weight: bold;
+			color: $ligth-black;
+			& > span{
+				font-weight: normal;
+				padding-left: 6px;
+			}
+			& ~ a{
+				text-decoration: underline !important;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 45px;
+				color: $ligth-black;
+			}
+		}
+	}
+
+	.user-btn-buy{
+		margin-bottom: 44px;
+		background: $violet 0% 0% no-repeat padding-box;
+		border-radius: 10px;
+		transition: .2s;
+		padding: 28px;
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: normal;
+		color: #FFFFFF;
+		max-width: 502px;
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		&:hover{
+			background: #79BD9A;
+		}
+	}	
+}
+.user-card{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 10px #00000029;
+	border-radius: 10px;
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 784px;
+	&:before{
+		content: '';
+		width: 100%;
+		height: 14px;
+		display: block;
+		box-shadow: 0px 1px 10px #0000000D;
+		border-radius: 10px 10px 0px 0px;
+	}
+	.user-card-header{
+		padding: 30px 34px 19px;
+		a{
+			color: $ligth-black ;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 36px;
+			&:hover{
+				text-decoration: underline !important;
+			}
+		}
+	} /* et-card-header */
+	.user-card-body{
+		padding: 0 34px;
+		& > .row{
+			border-top: 3px solid #EDEDED;
+			margin: 0;
+			padding: 32px 0 33px;
+			& > .col-12{
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.user-date{
+				p{
+					color: $ligth-black;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 26px;
+					&.date-info{
+						color: #19265D;
+						font-weight: bold;
+						font-size: 20px;
+					}
+					& ~ span{
+						font-size: 13px;
+						color: $ligth-black;
+						font-weight: normal;
+						line-height: 26px;
+					}
+				}
+				&:not(:last-of-type){
+					margin-bottom: 20px;
+				}
+			}
+			.user-date-info-box{
+				justify-content: space-between;
+				a,button{
+					width: 48%;
+					transition: .3s;
+					margin-bottom: 17px;
+				}
+				a{
+					display: flex;
+					align-items: center;
+					span{
+						color: $ligth-black;
+						font-weight: normal;
+						font-size: 20px;
+						line-height: 26px;
+					}
+					svg{
+						max-width: 50px;
+						max-height: 50px;
+						margin-right: 12px;
+					}
+					&:hover{
+						span{
+							color: $violet;
+						}
+						& > svg {
+							.pdf-d,
+							.id-b,
+							.pay-b,
+							.lett-b,
+							.form-b{
+								fill: $violet !important;
+							}
+						}
+					}
+				}
+				.user-btn-open-modal{
+					background: #19265D 0% 0% no-repeat padding-box;
+					box-shadow: 0px 1px 10px #0000000D;
+					border-radius: 10px;
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 22px;
+					color: #FFFFFF;
+					padding: 6px 16px 8px;
+					&:hover{
+						background: $violet;
+					}
+				}
+			}
+		}
+
+	} /* et-card-body */
+	&.user-card-orange{
+		&:before{
+		    background: transparent linear-gradient(92deg, #D6920A 0%, #F6F8FB 100%) 0% 0% no-repeat padding-box;
+		}
+	}
+	&.user-card-gray{
+		&:before{
+		    background: transparent linear-gradient(92deg, #9FA0A0 0%, #F6F8FB 100%) 0% 0% no-repeat padding-box;
+		}
+	}
+	&.user-card-blue{
+		&:before{
+		    background: transparent linear-gradient(92deg, #18207D 0%, #F6F8FB 100%) 0% 0% no-repeat padding-box;
+		}
+	}
+	&:hover{
+		box-shadow: 0px 0px 35px  #00000029;
+	}
+}
+/* user-reProgram section*/
+#user-reProgram{
+	padding: 50px 0 39px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	.user-referral-prog-block{
+		background: transparent linear-gradient(292deg, $violet 0%, #4F6FB2 100%) 0% 0% no-repeat padding-box;
+		box-shadow: 0px 1px 10px #0000000D;
+		border-radius: 10px;
+		padding: 27px 35px 48px;
+		max-width: 1069px;
+		width: 98%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		.user-referral-prog-info{
+			color: #FFFFFF;
+			width: 47%;
+			a{
+				font-weight: bold;
+				font-size: 35px;
+				line-height: 50px;
+				color: #FFFFFF;
+				&:hover{
+					text-decoration: underline !important;
+				}
+				& ~ p{
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 30px;
+					margin: 14px 0 41px;
+					width: 100%;
+					max-width: 344px;
+				}
+			}
+			.user-btn-read-more{
+				color: #FFFFFF;
+				font-weight: normal;
+				font-size: 25px;
+				line-height: 30px;
+				background: #19265D 0% 0% no-repeat padding-box;
+				box-shadow: 0px 1px 10px #0000000D;
+				border-radius: 10px;
+				padding: 20px 40px;
+				display: block;
+				width: 100%;
+				max-width: 268px;
+			}
+		}
+		.user-referral-prog-card{
+			width: 48%;
+			background: #FFFFFF 0% 0% no-repeat padding-box;
+			box-shadow: 0px 3px 10px #00000029;
+			border-radius: 10px;
+			padding: 27px 42px 40px;
+			h4{
+				color: $ligth-black;
+				font-weight: bold;
+				font-size: 25px;
+				line-height: 30px;
+			}
+			table{
+				margin: 14px 0 44px;
+				width: 100%;
+				td{
+					letter-spacing: 0px;
+					color: $ligth-black;
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 30px;
+					padding-bottom: 12px;
+					&:first-of-type{
+						width: 80%;
+					}
+				}
+			}
+			.user-btn-open-rewardsModal{
+				padding: 0;
+				text-decoration: underline !important;
+				color: $ligth-black;
+				font-size: 20px;
+				line-height: 45px;
+				font-weight: normal;
+			}
+		}
+
+	}
+	.user-btn-group{
+		width: 100%;
+		max-width: 502px;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		button{
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 30px;
+			color: #FFFFFF;
+			background: #19265D 0% 0% no-repeat padding-box;
+			border-radius: 10px;
+			margin-bottom: 22px;
+			padding: 20px;
+			&:hover{
+				text-decoration: underline !important;
+			}
+		}
+	}
+}
+
+/* Media */
+@media (max-width: 1200px) {
+	.user-card{
+		.user-card-body{
+			.user-date-block{
+				border-bottom: 3px solid #EDEDED;
+				padding-bottom: 20px;
+				margin-bottom: 18px;
+
+				.user-date{
+					width: 50%;
+				}
+			}
+		}
+	}
+}	
+@media (max-width: 992px) {
+	/* user-insurance-block section*/
+	#user-insurance-block{
+		padding: 21px 20px 10px;
+		
+		.user-insurance-header{
+			margin-bottom: 20px;
+			h2{
+				font-size: 22px;
+				line-height: 27px;
+			}
+			h3{
+				font-size: 16px;
+				line-height: 20px;
+				& ~ a{
+					font-size: 14px;
+					line-height: 26px;
+				}
+			}
+		}
+
+		.user-btn-buy{
+			margin-bottom: 21px;
+			background: #79BD9A;
+			padding: 17px 25px;
+			font-size: 18px;
+			line-height: 28px;
+			max-width: 100%;
+			margin-left: 0;
+		}	
+	}
+	.user-card-cols{
+		margin-bottom: 20px;
+	}
+	.user-card{
+		max-width: 100%;
+		.user-card-header{
+			padding: 18px 20px 10px;
+			a{
+				font-size: 20px;
+				line-height: 24px;
+				text-decoration: underline !important;
+			}
+		} /* et-card-header */
+		.user-card-body{
+			padding: 0 20px;
+			& > .row{
+				padding: 20px 0 11px;
+				.user-date{
+					p{
+						font-size: 16px;
+						&.date-info{
+							font-size: 16px;
+						}
+						& ~ span{
+							font-size: 11px;
+							line-height: 14px;
+						}
+					}
+					&:not(:last-of-type){
+						margin-bottom: 0px;
+					}
+				}
+				.user-date-info-box{
+					a,button{
+						width: 100%;
+						margin-bottom: 11px;
+					}
+					a{
+						span{
+							font-size: 16px;
+						}
+						svg{
+							max-width: 43px;
+							max-height: 43px;
+							margin-right: 17px;
+						}
+					}
+					.user-btn-open-modal{
+						font-size: 16px;
+						padding: 10px 16px;
+						margin-top: 8px;
+					}
+				}
+			}
+
+		} /* et-card-body */
+	}
+	/* user-reProgram section*/
+	#user-reProgram{
+		padding: 22px 20px 4px;
+		.user-referral-prog-block{
+			padding: 20px;
+			max-width: 100%;
+			width: 100%;
+			flex-direction: column;
+			.user-referral-prog-info{
+				width: 100%;
+				a{
+					font-size: 18px;
+					line-height: 24px;
+					text-decoration: underline !important;
+					& ~ p{
+						font-size: 15px;
+						line-height: 22px;
+						margin: 5px 0 15px;
+						max-width: 100%;
+					}
+				}
+				.user-btn-read-more{
+					font-size: 16px;
+					line-height: 22px;
+					padding: 10px 16px;
+					max-width: 160px;
+				}
+			}
+			.user-referral-prog-card{
+				width: 100%;
+				margin-top: 21px;
+				padding: 27px 18px 34px;
+				h4{
+					font-size: 18px;
+				}
+				table{
+					margin: 29px 0 23px;
+					td{
+						font-size: 16px;
+						padding-bottom: 6px;
+					}
+				}
+				.user-btn-open-rewardsModal{
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+
+		}
+		.user-btn-group{
+			max-width: 100%;
+			margin: 0; 
+			margin-top: 25px;
+			button{
+				font-size: 18px;
+				line-height: 22px;
+				margin-bottom: 21px;
+				padding: 10px 20px;
+			}
+		}
+	}
+}

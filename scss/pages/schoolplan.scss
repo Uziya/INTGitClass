@@ -1,0 +1,63 @@
+/* et-schoolplan-body */
+#et-schoolplan-body{
+	padding: 53px 0 25px;
+	#et-plan-cardsGroup{
+		& > .col-12.col-xl-6{
+			margin-bottom: 74px;
+		}
+		.et-card{
+			.et-card-body{
+				display: none;
+			}
+			&.et-card-gray,
+			&.et-card-blue,
+			&.et-card-orange{
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.et-schoolplan-accordion{
+		width: calc(100% - 22px);
+		margin-left: auto;
+		margin-top: 9px;
+		margin-bottom: 25px;
+		.et-eligible-accordion{
+			&:not(:last-of-type){
+				margin-bottom: 36px;
+			}
+		}
+	}
+}
+
+/* media */
+@media (max-width: 1200px) {
+	/* et-schoolplan-body */
+	#et-schoolplan-body{
+		.et-schoolplan-accordion{
+			width: 100%;
+			margin: 5px auto 0;
+			.et-eligible-accordion{
+				&:not(:last-of-type){
+					margin-bottom: 26px;
+				}
+			}
+		}
+		#et-plan-cardsGroup{
+			& > .col-12.col-xl-6{
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+@media (max-width: 992px) {
+	/* et-schoolplan-body */
+	#et-schoolplan-body{
+		padding: 28px 20px 26px;
+		#et-plan-cardsGroup{
+			& > .col-12.col-xl-6{
+				margin-bottom: 22px;
+			}
+		}
+	}
+}

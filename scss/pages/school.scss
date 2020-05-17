@@ -1,0 +1,172 @@
+/* et-school-top section */
+#et-school-top{
+	padding: 51px 0 39px;
+	background: transparent linear-gradient(97deg, #19265D 0%, #4F6FB2 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0px 1px 10px #0000000D;
+	h2{
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 60px;
+		& ~ h3{
+			color: #FFFFFF;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 45px;
+			& ~ p{
+				margin-top: 10px;
+				color: #FFFFFF;
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 45px;
+			}
+		}
+	}
+}
+/* et-school-box block*/
+#et-school-box{
+	.et-benefits-box .main-bef-cols svg>path{
+		fill: #19265D;
+	}
+	.et-planid-form .et-form-group p{
+		color: #19265D;
+	}
+	.et-planid-form .et-form-group .et-input-group{
+		border-bottom-color: #19265D;
+		& > .et-btn.et-btn-ageMinus > svg,
+		& > .et-btn.et-btn-age-Plus > svg{
+		 	width: 100%;
+		 	& > path{
+		 		fill:  #19265D;
+		 	}
+		}
+	}
+}
+/* et-school-covers-body block */
+.et-school-covers-body{
+	background: #F6F8FB 0% 0% no-repeat padding-box;
+	box-shadow: 0px 1px 10px #0000000D;
+	border-radius: 10px;
+	margin-left: 0;
+	padding: 20px 37px 41px;
+	margin-bottom: 57px;
+
+	h3{
+		font-weight: bold;
+		font-size: 30px;
+		letter-spacing: 0px;
+		color: $ligth-black;
+		margin-bottom: 20px;
+		line-height: 50px;
+	}
+}
+/* et-school-brochure block */
+.et-school-brochure{
+	width: calc(100% - 21px);
+	margin-bottom: 35px;
+	& > h5{
+		width: 45%;
+	}
+}
+/* et-school-brochure-btn-group block */
+.et-school-brochure-btn-group{
+	width: calc(100% - 21px);
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	button{
+		font-weight: normal;
+		font-size: 25px;
+		line-height: 30px;
+		color: #FFFFFF;
+		background: #19265D 0% 0% no-repeat padding-box;
+		border-radius: 10px;
+		margin-bottom: 27px;
+		padding: 18px 20px;
+		&:hover{
+			text-decoration: underline !important;
+		}
+	}
+}
+/* et-school-accordion block*/
+.et-school-accordion{
+	margin-bottom: 57px;
+}
+
+/* Media */
+@media (max-width: 1200px) {
+	/* et-school-covers-body block */
+	.et-school-covers-body{
+		& ~ div.col-12.col-xl-4{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	/* .et-school-brochure block*/
+	.et-school-brochure,
+	.et-school-brochure-btn-group{
+		width: 100%;
+		margin: 0 auto 26px;
+	}
+	.et-school-brochure-btn-group{
+		margin-bottom: 0;
+	}
+	.et-school-accordion{
+		margin-bottom: 26px;
+	}
+}
+@media (max-width: 992px) {
+	/* et-school-top section */
+	#et-school-top{
+		padding: 27px 20px 29px;
+		h2{
+			font-size: 22px;
+			line-height: 28px;
+			& ~ h3{
+				font-size: 18px;
+				line-height: 24px;
+				margin-top: 5px;
+				& ~ p{
+					margin-top: 15px;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+	/* et-school-box */
+	#et-school-box{
+		.et-planid-form .et-form-group p{
+			color: $violet;
+		}
+		.et-planid-form .et-form-group .et-input-group{
+			border-bottom-color: $violet;
+			& > .et-btn.et-btn-ageMinus > svg,
+			& > .et-btn.et-btn-age-Plus > svg{
+			 	& > path{
+			 		fill:  $violet;
+			 	}
+			}
+		}
+	}
+	/* et-school-covers-body block */
+	.et-school-covers-body{
+		margin-bottom: 26px;
+		padding: 22px 20px 17px;
+		h3{
+			font-size: 20px;
+			margin-bottom: 0px;
+			line-height: 50px;
+		}
+	}
+	/* et-school-brochure-btn-group block */
+	.et-school-brochure-btn-group{
+		margin-bottom: 5px;
+		button{
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: 21px;
+			padding: 10px 20px;
+		}
+	}
+}

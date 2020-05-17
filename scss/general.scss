@@ -1,0 +1,44 @@
+/* Colors */
+@import "general/colors";
+
+/* Main */
+@import "general/main";
+
+/* Header */
+@import "layouts/header";
+
+/* Menu */
+@import "layouts/menu";
+
+/* Footer */
+@import "layouts/footer";
+
+/* Home page*/
+@import "pages/index";
+
+/* Search page*/
+@import "pages/search";
+
+/* Sign In page*/
+@import "pages/signin";
+
+/* Plan page*/
+@import "pages/plan";
+
+/* PlanId page */
+@import "pages/planid";
+
+/* School page */
+@import "pages/school";
+
+/* SchoolPlan page */
+@import "pages/schoolplan";
+
+/* User page */
+@import "pages/user";
+
+/* Redeem Reward modal | pop-up */
+@import "layouts/rewardsModal";
+
+/* Email all files modal | pop-up */
+@import "layouts/emailAllModal";
