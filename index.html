@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ISO ։ International Student Insurance</title>
+	<link rel="shortcut icon" href="assets/images/global/logo.svg">
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/scss/plugins/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/scss/plugins/swiper.min.css">
+	<link rel="stylesheet" href="assets/scss/general.css">
+	
+
+</head>
+<body>
+	<!-- Alert  -->
+	<div class="alert fade show mb-0 fixed-top et-alert" role="alert">
+		<a href="#" class="et-btn">Special Offer! Click Here For More Details</a>
+	  	<button type="button" class="close et-alert-closeBtn" data-dismiss="alert" aria-label="Close">
+	    	<span aria-hidden="true">&times;</span>
+	  	</button>
+	</div>
+
+	<!-- Header -->
+	<header class="et-blur-menuOpen header-home">
+		<div class="et-Header-top" id="menu">
+			<div class="container d-flex align-items-center justify-content-between">
+				<a href="#" class="et-iso-brand">
+					<img src="assets/images/global/logo.svg" alt="Logo">
+					<span class="d-none d-lg-inline">International Student Insurance</span>
+				</a>
+				<div class="et-header-rightBlock">
+					<a href="#" class="et-btn-search d-none d-md-inline-block">Search</a>
+					<a href="signin.html" class="et-btn-singIn d-none d-md-inline-block">Sign in</a>
+					<button type="button" class="et-btn et-menu-openBtn">
+						<i class="et-menu-three-line"></i>
+					</button>
+				</div> <!--et-header-rightBlock-->
+			</div>		
+		</div> <!--et-Header-top-->
+		<div class="et-header-bottom">
+			<div class="container">
+				<div class="et-header-bottom-start">
+					<h2 class="mb-0">ISO health insurance meets your<br />university requirements. Guaranteed.</h2>
+				</div>
+				<div class="et-header-findBlock">
+					<form class="row">
+						<div class="col-12  col-lg">
+							<div class="form-group">
+								<label for="et-find-visaStatus">My visa status</label>
+								<dl id="et-find-visaStatus">
+									<dt> Dependent
+										<svg xmlns="http://www.w3.org/2000/svg" width="18.024" height="10.776" viewBox="0 0 18.024 10.776"><path d="M201.446,165.191l-1.5-1.5a.268.268,0,0,0-.379,0l-7.053,7.053-7.051-7.053a.268.268,0,0,0-.379,0l-1.5,1.5a.266.266,0,0,0,0,.377l7.189,7.187a.33.33,0,0,0,.036.045l1.521,1.508a.268.268,0,0,0,.187.077.26.26,0,0,0,.187-.077l.719-.717.032-.026,8-8A.27.27,0,0,0,201.446,165.191Z" transform="translate(-183.498 -163.608)"/></svg>
+									</dt>
+									<dd>
+										<ul class="list-unstyled mb-0">
+											<li>Dependent</li>
+											<li>J visa scholar</li>
+											<li>International student</li>
+											<li>Non student</li>
+										</ul>
+									</dd>
+								</dl>
+								<input type="hidden" name="iso_visa_status">
+							</div>
+						</div>
+						<div class="col-12 col-md-8 col-lg-4">
+							<div class="form-group">
+								<label for="et-find-school">My school</label>
+								<dl id="et-find-school">
+									<dt> New York University (NY)
+										<svg xmlns="http://www.w3.org/2000/svg" width="18.024" height="10.776" viewBox="0 0 18.024 10.776"><path d="M201.446,165.191l-1.5-1.5a.268.268,0,0,0-.379,0l-7.053,7.053-7.051-7.053a.268.268,0,0,0-.379,0l-1.5,1.5a.266.266,0,0,0,0,.377l7.189,7.187a.33.33,0,0,0,.036.045l1.521,1.508a.268.268,0,0,0,.187.077.26.26,0,0,0,.187-.077l.719-.717.032-.026,8-8A.27.27,0,0,0,201.446,165.191Z" transform="translate(-183.498 -163.608)"/></svg>
+									</dt>
+									<dd>
+										<ul class="list-unstyled mb-0">
+											<li>New York University (NY)</li>
+											<li>LA University</li>
+											<li>SK University</li>
+											<li>AR  University</li>
+										</ul>
+									</dd>
+								</dl>
+								<input type="hidden" name="iso_school">
+							</div>
+						</div>
+						<div class="col-12 col-md-4 col-lg-2">
+							<div class="form-group">
+								
+									
+								<label for="et-find-age" class="d-none d-md-block">My age</label>
+								<div class="et-input-group d-none d-md-flex">
+								
+									<button type="button" class="et-btn et-btn-ageMinus">
+									</button>
+									<input type="number" name="iso_age" id="et-find-age" value="20">
+									<button type="button" class="et-btn et-btn-age-Plus">
+									</button>
+								</div>
+								<div class="d-block d-md-none form-group">
+									<label for="et-find-age1">My age</label>
+									<dl id="et-find-age1">
+										<dt> 20
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.024" height="10.776" viewBox="0 0 18.024 10.776"><path d="M201.446,165.191l-1.5-1.5a.268.268,0,0,0-.379,0l-7.053,7.053-7.051-7.053a.268.268,0,0,0-.379,0l-1.5,1.5a.266.266,0,0,0,0,.377l7.189,7.187a.33.33,0,0,0,.036.045l1.521,1.508a.268.268,0,0,0,.187.077.26.26,0,0,0,.187-.077l.719-.717.032-.026,8-8A.27.27,0,0,0,201.446,165.191Z" transform="translate(-183.498 -163.608)"/></svg>
+										</dt>
+										<dd>
+											<ul class="list-unstyled mb-0">
+												<li>20</li>
+												<li>25</li>
+												<li>30</li>
+												<li>35</li>
+											</ul>
+										</dd>
+									</dl>
+									<input type="hidden" name="et-find-age1">
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg">
+							<button type="submit" class="et-btn et-btn-find">Find my insurance</button>
+						</div>
+					</form>
+				</div> <!--et-header-findBlock-->
+			</div>
+		</div> <!--et-header-bottom-->
+	 </header>
+	 
+	 <!-- search panel -->
+
+	 <div class="search_panel">
+		 <div class="container">
+			<form action="#">
+				<div class="input-group search_bar mb-3">
+					<input type="text" class="form-control" name="searchInfo" placeholder="Type anything">
+					<div class="input-group-append">
+					  <a href="search.html" class="btn btn-search" type="button">Search</a>
+					</div>
+				  </div>
+			</form>
+		 </div>
+	 </div>
+
+ 	<!-- Menu : slide-right -->
+	<div class="et-menu-modal">
+		<div class="et-menu-modal-content">
+			<div class="et-menu-modal-body">
+				<nav class="et-navbar">
+					<button  type="button" class="et-btn et-menu-close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="31.598" height="31.599" viewBox="0 0 31.598 31.599"><defs><style>.a{fill:#222;stroke:rgba(0,0,0,0);}</style></defs><path class="a" d="M-8477.523,9543.763l-2.124-2.125a.438.438,0,0,1-.062-.438,1.371,1.371,0,0,1,.353-.558l12.085-12.086-12.085-12.084a1.367,1.367,0,0,1-.353-.559.432.432,0,0,1,.063-.436l2.124-2.127a.434.434,0,0,1,.437-.06,1.378,1.378,0,0,1,.558.352l12.085,12.085,12.085-12.085a1.367,1.367,0,0,1,.559-.35.429.429,0,0,1,.436.06l2.127,2.125a.433.433,0,0,1,.06.436,1.375,1.375,0,0,1-.352.559l-12.085,12.085,12.085,12.085a1.378,1.378,0,0,1,.352.558.439.439,0,0,1-.06.438l-2.127,2.122a.431.431,0,0,1-.436.063,1.339,1.339,0,0,1-.556-.353l-12.087-12.085-12.086,12.085a1.371,1.371,0,0,1-.558.353.676.676,0,0,1-.187.029A.351.351,0,0,1-8477.523,9543.763Z" transform="translate(8480.242 -9512.757)"/></svg>
+					</button>
+					<ul class="list-unstyled mb-0">
+						<li><a href="#">Find doctors & hospitals</a></li>
+						<li><a href="#">Claim procedures</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Administrator</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Main : Index Page -->
+	<main class="et-blur-menuOpen">	
+		<section id="aboutISO">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center mb-3 mb-lg-5">
+						<h2 class="mb-0">About ISO</h2>
+						<p>Health insurance for international students, by international students.</p>
+					</div>
+					<div class="col-12 col-xl-4">
+						<div class="et-about-why-block">
+							<h3>Why ISO?</h3>
+							<table class="table">
+								<tr>
+									<td><span>1</span></td>
+									<td>
+										<h5>We know international students</h5>
+										<p class="d-none d-lg-block">ISO is the largest international student insurance manager that offer multilingual and dedicated customer.</p>
+									</td>
+								</tr>
+								<tr>
+									<td><span>2</span></td>
+									<td>
+										<h5>We’ve got you covered</h5>
+										<p class="d-none d-lg-block">ISO plans cover exactly what you need and where you are in the U.S., with multiple networks of medical.</p>
+									</td>
+								</tr>
+								<tr>
+									<td><span>3</span></td>
+									<td>
+										<h5>Over 1 million students insured</h5>
+										<p class="d-none d-lg-block">We’ve insured over one million international students, and paid over a $100 million in claims, in just the.</p>
+									</td>
+								</tr>
+								<tr>
+									<td><span>4</span></td>
+									<td>
+										<h5>Plans that meet the requirements</h5>
+										<p class="d-none d-lg-block">ISO puts international students first. We offer international students the insurance plans to meet their school.</p>
+									</td>
+								</tr>
+							</table>
+						</div> <!--et-about-why-block--> 
+					</div>
+					<div class="col-12 col-xl-8 d-flex flex-column ">
+						<div class="et-about-serveYou-block d-none d-xl-block">
+							<h3>ISO is delighted to serve you</h3>
+							<div class="row m-0">
+								<div class="col-12 col-lg-6 p-0">
+									<a href="#">J1 Exchange</a>
+									<p>Special plans for J1 visa holders that meet and exceed the requirements of the U.S. Department of States.</p>
+								</div>
+								<div class="col-12 col-lg-6 p-0">
+									<a href="#">OPT</a>
+									<p>ISO continue covering you after graduation, when you change status to OPT. SO continue covering you after graduation.</p>
+								</div>
+								<div class="col-12 col-lg-6 p-0">
+									<a href="#">High School</a>
+									<p>High school international students are covered now with low deductibles. High school international students.</p>
+								</div>
+								<div class="col-12 col-lg-6 p-0">
+									<a href="#">Voyager</a>
+									<p>Not a student? No problem! We offer coverage for non-student visa holders. offer coverage for non-student visa holders.</p>
+								</div>
+							</div>
+						</div> <!--et-about-serveYou-block-->
+						<div class="et-about-referralProgram-block">
+							<a href="#" class="text-deoration-none">Special Offer: ISO Referral Program</a>
+							<p class="d-none d-md-block">ISO will pay you $10 every time you refer someone who makes a purchase. And since you can refer as many people as you like, there is NO LIMIT to how much you can earn!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> <!--aboutISO section-->
+
+		<section id="insureStudents">
+			<div class="container">
+				<div class="row align-items-start">
+					<div class="col-12 col-lg-4" id="et-insureStudents-slider-height">
+						<h2>We Insure Students from<span class="d-block">Over 6,700 Schools</span></h2>
+						<p>ISO maintains strong relationships with thousands of international student advisors throughout the U.S. thanks to our reputation for meeting the market needs. After six decades of insuring international students, we are proud in having insured students in over 6,700 schools. These students benefit from our customizable plan options, flexible enrollment, billing, and claims management.</p>
+					</div>
+					<div class="col-12 col-lg-8 d-flex flex-column justify-content-between">
+						<div id="et-insureStudents-slider" class="swiper-container mx-auto">
+							<div class="swiper-wrapper">
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-1.png" alt="school" class="img-fluid">
+									</div>
+									<p>berkeley college</p>
+								</div>
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-2.png" alt="school" class="img-fluid">
+									</div>
+									<p>University of California</p>
+								</div>
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-3.png" alt="school" class="img-fluid">
+									</div>
+									<p>Massachusetts Institute of Technology</p>
+								</div>
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-1.png" alt="school" class="img-fluid">
+									</div>
+									<p>New York University (NYU)</p>
+								</div>
+								<div class="et-slider-item swiper-slide">	
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-2.png" alt="school" class="img-fluid">
+									</div>
+									<p>New York University (NYU)</p>
+								</div>
+								<div class="et-slider-item swiper-slide">	
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-3.png" alt="school" class="img-fluid">
+									</div>
+									<p>New York University (NYU)</p>
+								</div>
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-1.png" alt="school" class="img-fluid">
+									</div>								
+									<p>berkeley college</p>
+								</div>
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-2.png" alt="school" class="img-fluid">
+									</div>
+									<p>University of California</p>
+								</div>
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-3.png" alt="school" class="img-fluid">
+									</div>
+									<p>Massachusetts Institute of Technology</p>
+								</div>
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-1.png" alt="school" class="img-fluid">
+									</div>
+									<p>New York University (NYU)</p>
+								</div>
+								<div class="et-slider-item swiper-slide">	
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-2.png" alt="school" class="img-fluid">
+									</div>
+									<p>New York University (NYU)</p>
+								</div>
+								<div class="et-slider-item swiper-slide">	
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-3.png" alt="school" class="img-fluid">
+									</div>
+									<p>New York University (NYU)</p>
+								</div>
+								<div class="et-slider-item swiper-slide">
+									<div class="et-slider-img">	
+										<img src="assets/images/index/insureStudentsBlock/school-2.png" alt="school" class="img-fluid">
+									</div>
+									<p>New York University (NYU)</p>
+								</div>
+								<div class="et-slider-item swiper-slide">	
+									<div class="et-slider-img">
+										<img src="assets/images/index/insureStudentsBlock/school-3.png" alt="school" class="img-fluid">
+									</div>
+									<p>New York University (NYU)</p>
+								</div>
+							</div> <!--swiper-wrapper-->
+						</div> <!--et-insureStudents-slider | swiper-container-->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</section> <!--insureStudents section-->
+
+		<section id="peopleSayISO">
+			<div class="container">
+				<h2 class="text-center">What Do People Say About ISO?</h2>
+				<div id="et-peopleSay-slider">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="et-card swiper-slide">
+								<p class="et-card-message">Thank you for continuing to help our students with those 2 great ISO policies and still helping us with our mandates for effective dates.</p>
+								<h5 class="et-card-studen">Susanna, School advisor</h5>
+								<p>University of South Florida, Tampa, FL</p>
+							</div>
+							<div class="et-card swiper-slide">
+								<p class="et-card-message">Thank you very much for your help. I really appreciate it. The customer service of ISO is beyond expectation.</p>
+								<h5 class="et-card-studen">He X, student</h5>
+								<p>Indiana University Bloomington, Bloomington, IN</p>
+							</div>
+							<div class="et-card swiper-slide">
+								<p class="et-card-message">Thank you for continuing to help our students with those 2 great ISO policies and still helping us with our mandates for effective dates.</p>
+								<h5 class="et-card-studen">Susanna, School advisor</h5>
+								<p>University of South Florida, Tampa, FL</p>
+							</div>
+							<div class="et-card swiper-slide">
+								<p class="et-card-message">Thank you for continuing to help our students with those 2 great ISO policies and still helping us with our mandates for effective dates.</p>
+								<h5 class="et-card-studen">Susanna, School advisor</h5>
+								<p>University of South Florida, Tampa, FL</p>
+							</div>
+							<div class="et-card swiper-slide">
+								<p class="et-card-message">Thank you very much for your help. I really appreciate it. The customer service of ISO is beyond expectation.</p>
+								<h5 class="et-card-studen">He X, student</h5>
+								<p>Indiana University Bloomington, Bloomington, IN</p>
+							</div>
+						</div> <!--swiper-wrapper-->
+					</div> <!--swiper-container-->
+					<div class="swiper-pagination"></div>
+				</ul> <!--et-peopleSay-slider | swiper-container-->
+			</div>
+		</section> <!--peopleSayISO section-->
+
+		<section id="questionsHelp" class="d-none d-lg-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-xl-4">
+						<h2>Any Questions? <span class="d-block">We Are Here to Help</span></h2>
+						<button type="button" class="et-btn et-btn-addFAQ">Additional FAQ</button>
+					</div>
+					<div class="col-lg-7 col-xl-8">
+						<div class="accordion" id="et-accordionHelp">
+							<div class="card">
+							    <div class="card-header" id="et-accord-help-1">
+							        <button class="btn btn-link d-flex justify-content-between align-items-center w-100" type="button" data-toggle="collapse" data-target="#et-accord-coll-1" aria-expanded="false" aria-controls="et-accord-coll-1">
+							        How do I enroll in ISO’s insurance plans online?
+							          	<svg xmlns="http://www.w3.org/2000/svg" width="18.024" height="10.776" viewBox="0 0 18.024 10.776"><path d="M201.446,165.191l-1.5-1.5a.268.268,0,0,0-.379,0l-7.053,7.053-7.051-7.053a.268.268,0,0,0-.379,0l-1.5,1.5a.266.266,0,0,0,0,.377l7.189,7.187a.33.33,0,0,0,.036.045l1.521,1.508a.268.268,0,0,0,.187.077.26.26,0,0,0,.187-.077l.719-.717.032-.026,8-8A.27.27,0,0,0,201.446,165.191Z" transform="translate(-183.498 -163.608)"/></svg>
+							        </button>
+							    </div>
+
+							    <div id="et-accord-coll-1" class="collapse" aria-labelledby="et-accord-help-1" data-parent="#et-accordionHelp">
+							      	<p class="card-body">
+							        Please visit our website and choose the plan that fits your needs. Click on the “Buy” icon and follow our convenient registration and purchasing process. Make the payment online using your credit or debit card. We will email you a confirmation letter together with your Insurance ID card and plan’s brochure instantly.
+							      	</p>
+							    </div>
+							</div>
+							<div class="card">
+							    <div class="card-header" id="et-accord-help-2">
+							        <button class="btn btn-link d-flex justify-content-between align-items-center w-100" type="button" data-toggle="collapse" data-target="#et-accord-coll-2" aria-expanded="false" aria-controls="et-accord-coll-2">
+							        Can the premium be paid monthly?
+							          	<svg xmlns="http://www.w3.org/2000/svg" width="18.024" height="10.776" viewBox="0 0 18.024 10.776"><path d="M201.446,165.191l-1.5-1.5a.268.268,0,0,0-.379,0l-7.053,7.053-7.051-7.053a.268.268,0,0,0-.379,0l-1.5,1.5a.266.266,0,0,0,0,.377l7.189,7.187a.33.33,0,0,0,.036.045l1.521,1.508a.268.268,0,0,0,.187.077.26.26,0,0,0,.187-.077l.719-.717.032-.026,8-8A.27.27,0,0,0,201.446,165.191Z" transform="translate(-183.498 -163.608)"/></svg>
+							        </button>
+							    </div>
+
+							    <div id="et-accord-coll-2" class="collapse" aria-labelledby="et-accord-help-2" data-parent="#et-accordionHelp">
+							      	<p class="card-body">
+							        Please visit our website and choose the plan that fits your needs. Click on the “Buy” icon and follow our convenient registration and purchasing process. Make the payment online using your credit or debit card. We will email you a confirmation letter together with your Insurance ID card and plan’s brochure instantly.
+							      	</p>
+							    </div>
+							</div>
+							<div class="card">
+							    <div class="card-header" id="et-accord-help-3">
+							        <button class="btn btn-link d-flex justify-content-between align-items-center w-100" type="button" data-toggle="collapse" data-target="#et-accord-coll-3" aria-expanded="false" aria-controls="et-accord-coll-3">
+							        How can I show proof of insurance to my school?
+							          	<svg xmlns="http://www.w3.org/2000/svg" width="18.024" height="10.776" viewBox="0 0 18.024 10.776"><path d="M201.446,165.191l-1.5-1.5a.268.268,0,0,0-.379,0l-7.053,7.053-7.051-7.053a.268.268,0,0,0-.379,0l-1.5,1.5a.266.266,0,0,0,0,.377l7.189,7.187a.33.33,0,0,0,.036.045l1.521,1.508a.268.268,0,0,0,.187.077.26.26,0,0,0,.187-.077l.719-.717.032-.026,8-8A.27.27,0,0,0,201.446,165.191Z" transform="translate(-183.498 -163.608)"/></svg>
+							        </button>
+							    </div>
+
+							    <div id="et-accord-coll-3" class="collapse" aria-labelledby="et-accord-help-3" data-parent="#et-accordionHelp">
+							      	<p class="card-body">
+							        Please visit our website and choose the plan that fits your needs. Click on the “Buy” icon and follow our convenient registration and purchasing process. Make the payment online using your credit or debit card. We will email you a confirmation letter together with your Insurance ID card and plan’s brochure instantly.
+							      	</p>
+							    </div>
+							</div>
+							<div class="card">
+							    <div class="card-header" id="et-accord-help-4">
+							        <button class="btn btn-link d-flex justify-content-between align-items-center w-100" type="button" data-toggle="collapse" data-target="#et-accord-coll-4" aria-expanded="false" aria-controls="et-accord-coll-4">
+							        Who is eligible for ISO’s insurance plans?
+							          	<svg xmlns="http://www.w3.org/2000/svg" width="18.024" height="10.776" viewBox="0 0 18.024 10.776"><path d="M201.446,165.191l-1.5-1.5a.268.268,0,0,0-.379,0l-7.053,7.053-7.051-7.053a.268.268,0,0,0-.379,0l-1.5,1.5a.266.266,0,0,0,0,.377l7.189,7.187a.33.33,0,0,0,.036.045l1.521,1.508a.268.268,0,0,0,.187.077.26.26,0,0,0,.187-.077l.719-.717.032-.026,8-8A.27.27,0,0,0,201.446,165.191Z" transform="translate(-183.498 -163.608)"/></svg>
+							        </button>
+							    </div>
+
+							    <div id="et-accord-coll-4" class="collapse" aria-labelledby="et-accord-help-4" data-parent="#et-accordionHelp">
+							      	<p class="card-body">
+							        Please visit our website and choose the plan that fits your needs. Click on the “Buy” icon and follow our convenient registration and purchasing process. Make the payment online using your credit or debit card. We will email you a confirmation letter together with your Insurance ID card and plan’s brochure instantly.
+							      	</p>
+							    </div>
+							</div>
+							<div class="card">
+							    <div class="card-header" id="et-accord-help-5">
+							        <button class="btn btn-link d-flex justify-content-between align-items-center w-100" type="button" data-toggle="collapse" data-target="#et-accord-coll-5" aria-expanded="false" aria-controls="et-accord-coll-5">
+							        Who is eligible for ISO’s insurance plans?
+							          	<svg xmlns="http://www.w3.org/2000/svg" width="18.024" height="10.776" viewBox="0 0 18.024 10.776"><path d="M201.446,165.191l-1.5-1.5a.268.268,0,0,0-.379,0l-7.053,7.053-7.051-7.053a.268.268,0,0,0-.379,0l-1.5,1.5a.266.266,0,0,0,0,.377l7.189,7.187a.33.33,0,0,0,.036.045l1.521,1.508a.268.268,0,0,0,.187.077.26.26,0,0,0,.187-.077l.719-.717.032-.026,8-8A.27.27,0,0,0,201.446,165.191Z" transform="translate(-183.498 -163.608)"/></svg>
+							        </button>
+							    </div>
+
+							    <div id="et-accord-coll-5" class="collapse" aria-labelledby="et-accord-help-5" data-parent="#et-accordionHelp">
+							      	<p class="card-body">
+							        Please visit our website and choose the plan that fits your needs. Click on the “Buy” icon and follow our convenient registration and purchasing process. Make the payment online using your credit or debit card. We will email you a confirmation letter together with your Insurance ID card and plan’s brochure instantly.
+							      	</p>
+							    </div>
+							</div>
+						</div> <!--accordion-->
+					</div>
+				</div>
+			</div>
+		</section> <!--questionsHelp section-->
+
+		<section id="administratorBrokers">
+			<div class="container">
+				<div class="row align-items-stretch">
+					<div class="col-12 col-lg col-xl">
+						<h3>School administrator & insurance brokers</h3>
+						<p>Affordable ACA comparable plans for your int’l students Affordable ACA comparable plans for your int’l students.</p>
+					</div>
+					<div class="col-12 col-lg-4 col-xl-3 text-lg-right text-left">
+						<button type="button" class="et-btn et-btn-adminBroks d-inline-block h-100">Click here</button>
+					</div>
+				</div>
+
+			</div>
+		</section> <!--administratorBrokers section-->
+	</main>
+	
+	<!-- Footer -->
+	<footer class="et-blur-menuOpen">
+		<div id="footer-navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-xl et-accordion">
+						<h3>About</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">About ISO </a></li>
+							<li><a href="#">FAQ </a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms of Use Links & Affiliates</a></li>
+							<li><a href="#">Links & Affiliates</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xl et-accordion">
+						<h3>Customer Care</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">Find doctors & hospitals </a></li>
+							<li><a href="#">Claim procedures</a></li>
+							<li><a href="#">How to choose a plan</a></li>
+							<li><a href="#">Administrator Side</a></li>
+							<li><a href="#">Schools Pages</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xl et-accordion">
+						<h3>Customer Care</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">Find doctors & hospitals </a></li>
+							<li><a href="#">Claim procedures</a></li>
+							<li><a href="#">How to choose a plan</a></li>
+							<li><a href="#">Administrator Side</a></li>
+							<li><a href="#">Schools Pages</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xl et-accordion">
+						<h3>Customer Care</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">Find doctors & hospitals </a></li>
+							<li><a href="#">Claim procedures</a></li>
+							<li><a href="#">How to choose a plan</a></li>
+							<li><a href="#">Administrator Side</a></li>
+							<li><a href="#">Schools Pages</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xl et-accordion">
+						<h3>Keep In Touch</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">International Student Org.</a></li>
+							<li><a href="mailto:customercare@isoa.org" class="et-text-underline">customercare@isoa.org</a></li>
+							<li><a href="tel:+1(212) 262-8922" class="et-text-underline">+1 (212) 262-8922</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> <!--footer-navbar-->
+		
+		<div id="footer-middleBlock">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<ul class="list-unstyled et-footer-socPages d-flex justify-content-between align-items-center w-100">
+							<li><a href="#"><img class="img-fluid" src="assets/images/footer/soc-pages/facebook.png" alt="iso-socPage"></a></li>
+							<li><a href="#"><img class="img-fluid" src="assets/images/footer/soc-pages/instagram.png" alt="iso-socPage"></a></li>
+							<li><a href="#"><img class="img-fluid" src="assets/images/footer/soc-pages/linkedin.png" alt="iso-socPage"></a></li>
+							<li><a href="#"><img class="img-fluid" src="assets/images/footer/soc-pages/soc-page.png" alt="iso-socPage"></a></li>
+							<li><a href="#"><img class="img-fluid" src="assets/images/footer/soc-pages/talk.png" alt="iso-socPage"></a></li>
+						</ul> <!--et-footer-socPages-->
+					</div>
+					<div class="col-12  col-md-6">
+						<img class="et-foot-financeI img-fluid float-right  d-md-block d-none" src="assets/images/footer/finance-icons.png" alt="finance-icons">
+					</div>
+					<div class="col-12 et-footer-textBlock">
+						<p  id="footer-text-mb-show">ISO Insurance is the manager and sole provider of ISO insurance plans to international students in many Universities. ISO offers its renowned plans: ISO COMPASS insurance - the leading F1 health insurance, COMPASS Gold Insurance, COMPASS Silver, Essential and ISO Secure plans, J1 Exchange plan - the leading J1 health insurance, ISO-Care and ISO-Share – an ACA comparable health insurance plan for international students. ISO international student insurance plans are the leading international student health insurance plans in US universities and colleges. International students who need ISOA international student insurance can find international students insurance at isoa.org (not to be confused with iso.org insurance or iso.com insurance). With ISO insurance for international students ISOA fulfills its goal of providing health insurance for international students in USA. Plans are mostly offered to F1 visa students and J1 visa holders. ISO insurance plans are also offered to non-U.S. citizens who are seeking visitor health insurance plans and dependent visitor medical insurance for non-U.S. citizens. ISO insurance for international students is suitable for students on OPT, international students after graduation and ESL students. In addition to student health insurance ISO also offers medical insurance for international students. International students should also check the benefits of the International Student Organization, such as newsletters, information about scholarships and grants and more attractive services and savings available are available at www.intlstudent.org. Remember: advise your university to contact ISO Insurance for the best international student medical insurance. Tell them that ISOA insurance is the answer! </p>
+						<p class="footer-text">ISO 留学生健康医疗保险致力于为国际学生提供不同种类的短期保险计划，以满足留学生的特殊保险需求。自成立以来，ISO一直秉承不变的理念是 ：为国际学生提供经济实惠的保险方案。美国政府要求留学生在美期间必须有健康保险，ISO的留学生保险计划能为留学生在美期间提供健康与安全保障。 深受广大留学生欢迎的保险计划有：Essential计划、Compass PPO计划、ISO Care 和ISO Secure计划等。这些保险计划能满足大多数美国学校对F1留学生和J1交换生的要求。对于有特殊要求的学校，ISO也提供了针对这些学校的特殊计划。 ISO推出的保险计划不仅能顺利waive掉学校的保险，价格上又经济合理，能为国际学生节省近几千刀的支出。如果对waiver流程有任何疑问 ，欢迎关注ISO微信微博公众号查看留学生保险waiver攻略，或者通过学校国际留学生办公室的官方网站了解学校的国际学生保险豁免政策。持有J1签证的访问学者在美国交流期间也同样必须 购买医保，ISO的两个J1计划都满足美国联邦政府出台的政策要求。对于已经毕业，处于OPT期间或者正在等待EAD卡的留学生，ISO的两个OPTima计划是最好的选择。如果您是非留学的来美访客，持有B1和B2旅游签证、作为学生家属的F2和J2签证、或者H1B工作签证，可以购买Voyager计划。</p>
+						<button type="button" class="et-btn et-btn-readMore d-inline-block d-lg-none align-top">Read more ></button>
+					</div>
+					<div class="col-12">
+						<img class="img-fluid d-md-none d-block card_icons" src="assets/images/footer/finance-icons.png" alt="finance-icons">
+					</div>
+				</div>
+			</div>
+		</div> <!--footer-middleBlock-->
+
+		<div id="footer-copyYear">
+			<div class="container text-center">
+				<h6>&copy;2020 ISO Insurance | All Rights Reserved</h6>
+			</div>
+		</div>
+	</footer>
+	
+
+	<script src="assets/js/plugins/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/plugins/swiper.min.js"></script>
+	<script src="assets/js/general.js"></script>
+</body>
+</html>
