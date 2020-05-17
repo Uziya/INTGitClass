@@ -1,0 +1,320 @@
+.user-email-all-modal{
+	.et-modal-container{
+		height: 70vh;
+		width: 100%;
+		max-width: 622px;
+		overflow-x: hidden;
+		&::-webkit-scrollbar{
+			display: none;
+		}
+	}
+	.et-modal-body{
+		background: #FFFFFF 0% 0% no-repeat padding-box;
+		box-shadow: 0px 1px 10px #0000000D;
+		border-radius: 10px;
+		width: 100%;
+		padding: 24px 27px;
+		.et-modal-close{
+			margin-left: auto;
+			display: block;
+			position: sticky;
+			top: 0;
+			& >svg{
+				width: 15px;
+				height: 15px;
+			}
+			&:hover{
+				& > svg >path{
+					fill:$violet;
+				}
+			}
+		}
+	}
+}
+.user-modal-emailAll-body{
+	padding: 14px 33px 38px 34px;
+
+	h3{
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 30px;
+		color: $violet;
+		margin-bottom: 7px;
+	}
+	form{
+		.form-group {
+		  	display: block;
+		  	margin-bottom: 5px;
+			& label {
+			  	position: relative;
+			  	cursor: pointer;
+			  	margin-bottom: 0;
+			  	color: $ligth-black;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 24px;
+				display: inline-flex;
+				align-items: center;
+
+				&:before {
+				  	content:'';
+				  	-webkit-appearance: none;
+				  	background-color: transparent;
+				  	border: 1px solid #222222;
+				  	padding: 8px;
+				  	display: inline-block;
+				  	position: relative;
+				  	vertical-align: middle;
+				  	cursor: pointer;
+				  	margin-right: 9px;
+				}
+				&.active:after {
+				  	content: '';
+				  	display: block;
+				  	position: absolute;
+				  	top: 3.5px;
+				  	left: 6px;
+				  	width: 7px;
+				  	height: 12px;
+				  	border: solid #000000;
+				  	border-width: 0 1px 1px 0;
+				  	transform: rotate(45deg);
+				}
+				span{
+					font-weight: bold;
+					margin-left: 5px;
+				}
+			}
+			& input {
+			 	padding: 0;
+			 	height: 100%;
+			 	width: 100%;
+			 	margin-bottom: 0;
+			 	display: none;
+			  	cursor: pointer;
+				&:checked ~ label:after {
+				  	content: '';
+				  	display: block;
+				  	position: absolute;
+				  	top: 3.5px;
+				  	left: 6px;
+				  	width: 7px;
+				  	height: 12px;
+				  	border: solid #000000;
+				  	border-width: 0 1px 1px 0;
+				  	transform: rotate(45deg);
+				}
+			}
+		}
+		.form-new-email{
+			.email-box{
+				width: 100%;
+				min-height: 58px;
+				position: relative;
+				display: flex;
+				align-items: flex-end;
+				& > label{
+					position: absolute;
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 24px;
+					color: $gray;
+					cursor: pointer;
+					transition: .2s top;
+					width: 100%;
+					overflow: hidden;
+					top: calc(100% - 32px);
+					width: 100%;
+					margin-bottom: 0;
+					&.active{
+						color: #707070;
+						font-size: 15px;
+						line-height: 18px;
+						top: 0px;
+						cursor: auto;
+						& ~ input{
+							border-bottom-color: $violet;
+						}
+					}
+				}
+				& > input{
+					width: 100%;
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 24px;
+					color: $ligth-black;
+					background: transparent;
+					border: 0;
+					border-bottom: 2px solid $gray;
+					&:hover,
+					&:focus{
+						box-shadow: 0 0 !important;
+						outline: 0;
+						border-bottom-color: $violet;
+					}
+				}
+			}
+			span{
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 32px;
+				color: $ligth-black;
+				display: block;
+				margin-top: 6px;
+			}
+		}
+		.btn-emailAll-send{
+			color: #FFFFFF;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 22px;
+			padding: 16px 18px;
+			width: 100%;
+			display: block;
+			background: $violet;
+			cursor: pointer;
+			border-radius: 10px;
+			margin-top: 47px;
+		}
+		.form-send-email-lists{
+			margin-top: 5px;
+			overflow: hidden;
+
+
+			.email-items{
+				display: inline-block;
+				background: #F6F8FB 0% 0% no-repeat padding-box;
+				border-radius: 10px;
+				position: relative;
+				overflow: hidden;
+				margin: 10px 10px 10px 0;
+				width: auto;
+				padding: 5px 10px;
+				max-width: 100%;
+
+				input{
+					display: none;
+
+					&:hover,
+					&:focus{
+						outline: 0;
+						box-shadow: 0 0;
+					}
+				}
+				span{
+					border: 0;
+					background: transparent;
+					text-align: center;
+					font-size: 15px;
+					font-weight: normal;
+					color: $ligth-black;
+					width: 100%;
+				}
+				.email-items-close{
+					position: absolute;
+					background: #F6F8FB 0% 0% no-repeat padding-box;
+					border-radius: 10px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 22px;
+					height: 22px;
+					// box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.1);
+					top: calc(50% - 11px);
+					transition: .2s;
+					right: -20%;
+					opacity: 0;
+					z-index: 3;
+					&>svg{
+						width: 10px;
+						height: 10px;
+					}
+					&:hover,
+					&:focus{
+						outline: 0;
+						box-shadow: 0 0;
+						&> svg> path{
+							fill: $violet;
+						}
+					}
+				}
+				&:hover,
+				&:focus {
+					box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2) ;
+					.email-items-close{
+						right: 1px;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+/* Media */
+@media (max-width: 992px) {
+	.user-email-all-modal{
+		.et-modal-container{
+			padding: 0 20px;
+		}
+		.et-modal-body{
+			padding: 17px 20px;
+			.et-modal-close{
+				position: static;
+			}
+		}
+	}
+	.user-modal-emailAll-body{
+		padding: 8px 0 5px;
+		h3{
+			font-size: 22px;
+			line-height: 26px;
+			margin-bottom: 8px;
+		}
+		form{
+			.form-group {
+			  	display: block;
+			  	margin-bottom: 10px;
+				& label {
+					font-size: 16px;
+					line-height: 19px;
+					align-items: start;
+					&.active:after {
+					  	top: 1.5px;
+					}
+				}
+				& input {
+					&:checked ~ label:after {
+					  	top: 1.5px;
+					}
+				}
+			}
+			.form-new-email{
+				.email-box{
+					min-height: 48px;
+					& > label{
+						font-size: 16px;
+						line-height: 19px;
+						top: calc(100% - 26px);
+						&.active{
+							font-size: 14px;
+							line-height: 16px;
+						}
+					}
+					& > input{
+						font-size: 16px;
+						line-height: 19px;
+					}
+				}
+				span{
+					font-size: 13px;
+					line-height: 16px;
+				}
+			}
+			.btn-emailAll-send{
+				font-size: 18px;
+				padding: 17px 25px;
+				margin-top: 29px;
+			}
+		}
+	}
+}

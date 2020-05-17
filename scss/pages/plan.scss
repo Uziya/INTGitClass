@@ -1,0 +1,322 @@
+#et-plan-top-block{
+	padding: 56px 0px 66px;
+	background: #F6F8FB 0% 0% no-repeat padding-box;
+	.et-plan-title{
+		margin-bottom: 35px;
+		p, h2{
+			color: $violet;
+			font-size: 35px;
+			line-height: 42px;
+			font-weight: normal;
+		}
+		h2{
+			font-weight: bold;
+		}
+	}
+} /* et-plan-top-block */
+#et-plan-cardsGroup{
+	.et-card{
+		background: #FFFFFF 0% 0% no-repeat padding-box;
+		box-shadow: 0px 3px 10px #00000029;
+		border-radius: 10px;
+		position: relative;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 500px;
+		width: 100%;
+		&:before{
+			content: '';
+			width: 100%;
+			height: 14px;
+			display: block;
+			box-shadow: 0px 1px 10px #0000000D;
+			border-radius: 10px 10px 0px 0px;
+		}
+		.et-card-header{
+			padding: 36px 33px 34px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			a{
+				color: $ligth-black ;
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 36px;
+				margin-bottom: 13px;
+				&:hover{
+					text-decoration: underline !important;
+				}
+			}
+			p{
+				color: $ligth-black ;
+				font-size: 18px;
+				line-height: 26px;
+				font-weight: normal;
+				& > span{
+					font-weight: bolder;
+					font-size: 35px;
+					line-height: 42px;
+					margin-right: 5px;
+				}
+				& ~ img{
+					max-height: 32px;
+				}
+			}
+		} /* et-card-header */
+		.et-card-body{
+			padding: 0 33px;
+			ul{
+				list-style-image: url('../images/plan/tick.png');
+				list-style-position: outside;
+				margin-bottom: 0;
+				padding-left: 30px;
+				li{
+					font-size: 18px;
+					line-height: 26px;
+					font-weight: normal;
+					color: $ligth-black;
+					padding-left: 13px;
+				}
+				&:first-of-type{
+					border-top: 3px solid #00000029;
+					border-bottom: 3px solid #00000029;
+					padding-top: 30px;
+					padding-bottom: 30px;
+					& > li{
+						&:first-of-type{
+							margin-bottom: 22px;
+						}
+						& > span{
+							font-weight: 600;
+							font-size: 25px;
+							line-height: 45px;
+							color: $ligth-black;
+						}
+					}			
+				}
+				&:last-of-type{
+					padding-top: 30px;
+					padding-bottom: 31px;
+					li{
+						margin-bottom: 12px;
+					}
+				}
+			}
+		} /* et-card-body */
+		.et-card-footer{
+			padding: 0 33px 36px;
+			.et-btn-planBuy{
+				background: $violet 0% 0% no-repeat padding-box;
+				border-radius: 10px;
+				padding: 21px 28px;
+				font-weight: normal;
+				font-size: 30px;
+				line-height: 36px;
+				color: #FFFFFF;
+				transition: .2s;
+				&:hover{
+					background-color: #79BD9A;
+				}
+			}
+			.et-collapes-cardBody{
+				color: $ligth-black;
+				font-size: 12px;
+				line-height: 26px;
+				font-weight: normal;
+				margin: 17px auto 0;
+				&:after{
+					content: '';
+					background: url('../images/plan/arrow.png') no-repeat center;
+					background-size: cover;
+					display: block;
+					width: 12px;
+					height: 7px;
+					margin: 5px auto 0;
+				}
+				&.active:after{
+					transform: rotate(180deg);
+				}
+			}
+		} /* et-card-footer */
+
+		&.et-card-orange{
+			margin-right: auto;
+			&:before{
+			    background: transparent linear-gradient(92deg, #D6920A 0%, #F6F8FB 100%) 0% 0% no-repeat padding-box;
+			}
+			.et-card-header p > span{
+				color: #D99B1F;
+			}
+		}
+		&.et-card-gray{
+			margin: auto;
+			&:before{
+			    background: transparent linear-gradient(92deg, #9FA0A0 0%, #F6F8FB 100%) 0% 0% no-repeat padding-box;
+			}
+			.et-card-header p > span{
+				color: #9FA0A0;
+			}
+		}
+		&.et-card-blue{
+			margin-left: auto;
+			&:before{
+			    background: transparent linear-gradient(92deg, #18207D 0%, #F6F8FB 100%) 0% 0% no-repeat padding-box;
+			}
+			.et-card-header p > span{
+				color: #18207D;
+			}
+		}
+		&:hover{
+			box-shadow: 0px 0px 35px  #00000029;
+			.et-card-footer{
+				.et-btn-planBuy{
+					background-color: #79BD9A;
+				}
+			}
+		}
+	}	
+}/* #et-plan-cardsGroup */
+#et-plan-help-block{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	padding: 51px 20px;
+	h3{
+		font-weight: bolder;
+		font-size: 30px;
+		line-height: 45px;
+		color: $violet;
+		& ~ p{
+			color: $ligth-black;
+			font-size: 20px;
+			font-weight: normal;
+			line-height: 26px;
+		}
+	}
+	.et-planHelp-readMore{
+		color: #FFFFFF;
+		font-weight: normal;
+		font-size: 25px;
+		line-height: 30px;
+		background: transparent linear-gradient(286deg, $violet 0%, $blue 100%) 0% 0% no-repeat padding-box;
+		box-shadow: 0px 1px 10px #0000000D;
+		border-radius: 10px;
+		height: 100%;
+		display: block;
+		padding: 0 49px;
+	}
+} /* et-plan-help-block */
+
+/* Media */
+@media (max-width: 1200px) {
+	#et-plan-cardsGroup{
+		.et-card{
+			max-width: 100%;
+			margin: auto !important;
+			.et-card-header{
+				a{
+					text-decoration: underline !important;
+				}
+			}
+			.et-card-footer{
+				.et-btn-planBuy{
+					background: #79BD9A;
+				}
+			} /* et-card-footer */
+		}
+	}
+}
+@media (max-width: 992px) {
+	#et-plan-top-block{
+		padding: 23px 20px 29px;
+		.et-plan-title{
+			margin-bottom: 14px;
+			p, h2{
+				font-size: 20px;
+				line-height: 26px;
+			}
+		}
+		
+	} /* et-plan-top-block */
+	#et-plan-cardsGroup{
+		.et-card{
+			.et-card-header{
+				padding: 18px 20px 17px;
+				a{
+					font-size: 20px;
+					line-height: 24px;
+					margin-bottom: 8px;
+					text-decoration: underline !important;
+				}
+				p{
+					font-size: 16px;
+					& > span{
+						font-size: 22px;
+						line-height: 27px;
+					}
+					& ~ img{
+						max-height: 24px;
+					}
+				}
+			} /* et-card-header */
+			.et-card-body{
+				padding: 7px 20px 0 ;
+				ul{
+					list-style-image: url('../images/plan/tickMb.png');
+					li{
+						font-size: 14px;
+						line-height: 18px;
+					}
+					&:first-of-type{
+						padding-top: 24px;
+						padding-bottom: 24px;
+						& > li{
+							&:first-of-type{
+								margin-bottom: 17px;
+							}
+							& > span{
+								font-size: 16px;
+								line-height: 26px;
+							}
+						}			
+					}
+					&:last-of-type{
+						padding-top: 24px;
+						padding-bottom: 24px;
+						li{
+							margin-bottom: 14px;
+						}
+					}
+				}
+			} /* et-card-body */
+			.et-card-footer{
+				padding: 0 20px 18px;
+				.et-btn-planBuy{
+					padding: 13px 25px;
+					font-size: 18px;
+					line-height: 22px;
+					background: #79BD9A;
+				}
+			} /* et-card-footer */
+		}
+	}
+	#et-plan-help-block{
+		padding: 32px 20px 33px;
+		h3{
+			font-size: 20px;
+			line-height: 28px;
+			& ~ p{
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		.et-planHelp-readMore{
+			font-size: 20px;
+			line-height: 24px;
+			padding: 12px 48px;
+			margin-top: 19px;
+			height: auto;
+		}
+	} /* et-plan-help-block */
+}

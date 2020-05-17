@@ -1,0 +1,186 @@
+#et-signIn-Form{
+	padding: 58px 0 86px;
+	background: transparent url("../images/global/bg_sky.png") no-repeat 0% bottom;
+	background-size: cover;
+	h2{
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 54px;
+		color: $violet;
+		margin-bottom: 1px;
+		& ~ p{
+			color: $ligth-black;
+			line-height: 45px;
+			font-weight: normal;
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+	}
+	.et-signIn-body{
+		max-width: 900px;
+		width: 80%;
+		margin: auto;
+		& > form{
+			background: #F6F8FB 0% 0% no-repeat padding-box;
+			box-shadow: 0px 1px 10px #0000000D;
+			border-radius: 10px;
+			padding: 94px 275px;
+			.et-formGroup{
+				max-width: 351px;
+				width: 100%;
+				position: relative;
+				&:first-of-type{
+					margin-bottom: 55px;
+				}
+				& > label{
+					position: absolute;
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 24px;
+					color: $gray;
+					cursor: pointer;
+					transition: .2s top;
+					width: 100%;
+					overflow: hidden;
+					top: 0;
+					&.active{
+						color: #707070;
+						font-size: 15px;
+						line-height: 18px;
+						top: -35px;
+						cursor: auto;
+						& ~ input{
+							border-bottom-color: $violet;
+						}
+					}
+				}
+				& > input{
+					font-weight: normal;
+					font-size: 20px;
+					line-height: 24px;
+					color: #707070;
+					background: transparent;
+					border: 0;
+					border-bottom: 2px solid $gray;
+					&:hover,
+					&:focus{
+						box-shadow: 0 0 !important;
+						outline: 0;
+						border-bottom-color: $violet;
+					}
+				}
+			}
+			.et-btn-forget{
+				margin: 9px 0 66px;
+				& > a{
+					font-size: 15px;
+					line-height: 18px;
+					font-weight: normal;
+					color: $violet;
+					&:hover{
+						text-decoration: underline !important;
+					}
+				}
+			}
+			.et-btnSingIn{
+				background: $violet 0% 0% no-repeat padding-box;
+				border-radius: 10px;
+				font-weight: normal;
+				font-size: 30px;
+				line-height: 36px;
+				color: #FFFFFF;
+				padding: 20px 28px;
+			}
+		}
+		.et-register{
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: normal;
+			color: $violet;
+			margin-top: 16px;
+			& > a{
+				font-weight: bolder !important;
+				font-size: 20px;
+				line-height: 24px;
+				color: $violet;
+				margin-left: 6px;
+				&:hover{
+					text-decoration: underline !important;
+				}
+			}
+		}
+	}
+} /* et-signIn-Form */
+
+/* Media */
+@media (max-width: 1200px) {
+	#et-signIn-Form{
+		.et-signIn-body{
+			& > form{
+				padding: 94px 150px;
+				.et-formGroup{
+					max-width: 100%;
+				}
+			}
+		}
+	} /* et-signIn-Form */
+}
+@media (max-width: 992px) {
+	#et-signIn-Form{
+		padding: 30px 20px 40px;
+		h2{
+			font-size: 20px;
+			line-height: 35px;
+			& ~ p{
+				line-height: 21px;
+				font-size: 18px;
+			}
+		}
+		.et-signIn-body{
+			max-width: 100%;
+			width: 100%;
+			& > form{
+				padding: 64px 40px;
+				.et-formGroup{
+					max-width: 100%;
+					&:first-of-type{
+						margin-bottom: 45px;
+					}
+					& > label{
+						font-size: 14px;
+						line-height: 18px;
+						white-space: nowrap;
+						&.active{
+							font-size: 14px;
+							line-height: 18px;
+							top: -25px;
+						}
+					}
+					& > input{
+						font-size: 16px;
+						line-height: 21px;
+					}
+				}
+				.et-btn-forget{
+					margin: 9px 0 46px;
+					font-size: 14px;
+				}
+				.et-btnSingIn{
+					font-size: 18px;
+					line-height: 25px;
+					padding: 18px 20px;
+				}
+			}
+			.et-register{
+				font-size: 16px;
+				line-height: 24px;
+				margin-top: 16px;
+				& > a{
+					font-size: 16px;
+					line-height: 24px;
+					margin-left: 6px;
+				}
+			}
+		}
+	} /* et-signIn-Form */
+}
